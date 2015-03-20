@@ -1,0 +1,18 @@
+{
+  "name": "redirector",
+  "description": "Simple redirector for Web sites",
+  "repository": "https://gitlab.com/fuzzy-io/redirector.git",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "cake build",
+    "clean": "cake clean",
+    "start": "node lib/main.js"
+  },
+  "dependencies": {
+    "lodash": "2.4.x"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "glob": "^4.3.1"
+  }
+}
