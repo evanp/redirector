@@ -12,16 +12,14 @@ defaults =
   address: "0.0.0.0"
   key: null
   cert: null
-  logfile: null
-  loglevel: "info"
-  redirectTo: "https://localhost"
+  redirectTo: "https://fuzzy.io"
 
 class RedirectServer
 
   constructor: (config) ->
 
     @config = _.defaults config, defaults
-    
+
     redirect = (req, res, next) =>
       url = @config.redirectTo+req.url
       res.writeHead(301, {'Location': url, 'Content-Type': 'text/html'})
