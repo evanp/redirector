@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:5.5
+FROM node:5-onbuild
 
 WORKDIR /opt/redirector
 ADD . .
