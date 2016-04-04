@@ -4,6 +4,7 @@ WORKDIR /opt/redirector
 ADD . .
 
 RUN npm install
+RUN npm install -g coffee-script
 RUN cake build
 
 EXPOSE 80
