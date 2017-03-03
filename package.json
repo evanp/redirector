@@ -1,7 +1,7 @@
 {
   "name": "redirector",
   "description": "Simple redirector for Web sites",
-  "repository": "https://gitlab.com/fuzzy-io/redirector.git",
+  "repository": "https://github.com/fuzzy-ai/redirector.git",
   "version": "0.2.6",
   "scripts": {
     "build": "cake build",

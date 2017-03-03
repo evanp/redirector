@@ -15,4 +15,4 @@ Environment variables
 - `REDIR_CERT`: Full content (not a path!) of the OpenSSL PEM file for the cert.
   Default is null.
 - `REDIR_REDIRECT_TO`: Protocol, server name and port of the server to redirect
-  to. Don't put in a trailing '/'. Defaults to 'https://fuzzy.io'.
+  to. Don't put in a trailing '/'. Defaults to 'https://fuzzy.ai'.

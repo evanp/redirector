@@ -1,5 +1,5 @@
 # redirectserver.coffee
-# Copyright 2015 9165584 Canada Corporation <legal@fuzzy.io>
+# Copyright 2015 9165584 Canada Corporation <legal@fuzzy.ai>
 # All rights reserved.
 
 http = require 'http'
@@ -12,7 +12,7 @@ defaults =
   address: "0.0.0.0"
   key: null
   cert: null
-  redirectTo: "https://fuzzy.io"
+  redirectTo: "https://fuzzy.ai"
 
 class RedirectServer
 
