@@ -2,7 +2,7 @@
   "name": "redirector",
   "description": "Simple redirector for Web sites",
   "repository": "https://github.com/fuzzy-ai/redirector.git",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "scripts": {
     "build": "cake build",
     "clean": "cake clean",
