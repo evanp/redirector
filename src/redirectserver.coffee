@@ -22,7 +22,13 @@ class RedirectServer
 
     redirect = (req, res, next) =>
       url = @config.redirectTo+req.url
-      res.writeHead(301, {'Location': url, 'Content-Type': 'text/html'})
+      # Explicitly tell the client to re-POST or re-PUT to the other
+      # server
+      if req.method == "GET"
+        statusCode = 301
+      else
+        statusCode = 307
+      res.writeHead(statusCode, {'Location': url, 'Content-Type': 'text/html'})
       res.end('<a href="'+url+'">'+url+'</a>')
 
     if @config.key
