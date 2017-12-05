@@ -1,11 +1,9 @@
-FROM node:6-onbuild
+FROM node:9-alpine
 
 WORKDIR /opt/redirector
-ADD . .
+COPY . /opt/redirector
 
 RUN npm install
-RUN npm install -g coffee-script
-RUN cake build
 
 EXPOSE 80
 EXPOSE 443
