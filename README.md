@@ -33,3 +33,7 @@ Environment variables
     Default is null.
 -   `REDIR_REDIRECT_TO`: Protocol, server name and port of the server to redirect
     to. Don't put in a trailing '/'. Defaults to '<https://fuzzy.ai>'.
+-   `REDIR_STATUS_URL`: an URL to use for checking the status of the server
+    without redirecting. Defaults to '/status' but you can change this to
+    something else if your server needs to redirect that URL. Note the leading
+    '/'.
