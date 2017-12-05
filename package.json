@@ -4,8 +4,13 @@
   "repository": "https://github.com/fuzzy-ai/redirector.git",
   "license": "Apache-2.0",
   "version": "0.4.1",
+  "config": {
+    "image": "fuzzyio/redirector"
+  },
   "scripts": {
-    "start": "node lib/main.js"
+    "start": "node lib/main.js",
+    "docker": "docker build -t $npm_package_config_image:$npm_package_version . && docker tag $npm_package_config_image:$npm_package_version $npm_package_config_image:latest",
+    "push": "docker push $npm_package_config_image:$npm_package_version && docker push $npm_package_config_image:latest"
   },
   "dependencies": {
     "lodash": "^4.17.4"
