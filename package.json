@@ -5,8 +5,6 @@
   "license": "Apache-2.0",
   "version": "0.4.1",
   "scripts": {
-    "build": "cake build",
-    "clean": "cake clean",
     "start": "node lib/main.js"
   },
   "dependencies": {
