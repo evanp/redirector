@@ -27,11 +27,5 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
-# Compiled coffee
-lib/*.js
-
-# Compiled tests
-test/*.js
-
 # Markdown output
 README.html
