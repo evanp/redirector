@@ -3,7 +3,7 @@
   "description": "Simple redirector tool for Docker stacks",
   "repository": "https://github.com/fuzzy-ai/redirector.git",
   "license": "Apache-2.0",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "config": {
     "image": "fuzzyio/redirector"
   },
